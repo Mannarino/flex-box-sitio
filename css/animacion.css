@@ -1,0 +1,75 @@
+
+#contenedor{
+	
+	height:550px;
+	width: 900px;
+	margin:0 auto;
+	background:url(../imagenes/fondo1.jpg) no-repeat;
+	position:relative;
+	overflow:hidden;
+}
+#libro{
+	width:301px;
+	height:517px;
+	background:url(../imagenes/libro.png) no-repeat;
+	position:absolute;
+	top:30px;
+	left:102px;
+}
+#origamiblanco{
+	width:216px;
+	height:193px;
+	background:url(../imagenes/origami-blanco.png) no-repeat;
+	position:absolute;
+	top:135px;
+	left:388px;
+	animation: blanco 5s infinite;
+}
+#origamiazul{
+	width:164px;
+	height:154px;
+	background:url(../imagenes/origami-azul.png) no-repeat;
+	position:absolute;
+	top:307px;
+	left:401px;
+	animation: azul 10s infinite;
+}
+#origamifucsia{
+	width:144px;
+	height:128px;
+	background:url(../imagenes/origami-fuscia.png) no-repeat;
+	position:absolute;
+	top:25px;
+	left:824px;
+	animation: tercero 20s infinite;
+
+}
+
+
+/*--- Animaciones ---*/
+
+@keyframes blanco {
+	from{
+		left: 159px; top: 135px;
+	}
+	to{
+		left: 1010px; top: -139px;
+	}
+}
+
+@keyframes azul {
+	from{
+		left: 167px; top: 306px;
+	}
+	to{
+		left: 1010px; top: 139px;
+	}
+}
+
+@keyframes  tercero {
+	0%{ left: -153px; top: 660px; }
+	25%{left: 865px; top: 315px;}
+	50%{left: 337px; top: 95px;}
+	100%{left: 1010px; top: -128px;}
+}
+
